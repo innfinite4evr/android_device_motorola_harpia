@@ -20,7 +20,7 @@ include device/motorola/msm8916-common/BoardConfigCommon.mk
 DEVICE_PATH := device/motorola/harpia
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := harpia,harpia_retail
+TARGET_BOOTLOADER_BOARD_NAME := harpia,harpia_retail
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_harpia
@@ -28,7 +28,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_harpia
 
 # Kernel
 TARGET_KERNEL_CONFIG := harpia_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi- 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216     # 16384 * 1024 mmcblk0p31
@@ -41,5 +42,3 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 11775377408 # 11499392 * 1024 mmcblk0p42
 # Power
 TARGET_POWERHAL_HEADER_PATH := $(DEVICE_PATH)/power
 
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

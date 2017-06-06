@@ -41,3 +41,20 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc
+
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.audio.fluence.mode=endfire \
+    persist.audio.fluence.voicecall=true \
+    ro.qc.sdk.audio.fluencetype=fluence \
+    ro.sf.lcd_density=320 \
+    ro.du.updater=harpia
+
+# set default USB configuration
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    sys.usb.config=mtp,adb \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0
+ 
+# Use specific resolution for bootanimation
+SMALL_BOOTANIMATION_SIZE := 720x720
