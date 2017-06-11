@@ -1,8 +1,8 @@
 [
   {
-    "repository":   "DirtyUnicorns/android_device_motorola_msm8916-common",
+    "repository":   "LineageOS/android_device_motorola_msm8916-common",
     "target_path":  "device/motorola/msm8916-common",
-    "branch":       "n7x-caf"
+    "branch":       "cm-14.1"
   },
   {
     "repository":   "DirtyUnicorns/android_external_bson",
