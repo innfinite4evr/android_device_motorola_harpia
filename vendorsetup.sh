@@ -1,3 +1,1 @@
-add_lunch_combo gzosp_harpia-userdebug
-add_lunch_combo gzosp_harpia-eng
-
+add_lunch_combo aosp_harpia-userdebug

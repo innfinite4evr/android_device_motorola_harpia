@@ -14,8 +14,6 @@
 # limitations under the License.
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
-$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
-
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
@@ -23,7 +21,7 @@ TARGET_SCREEN_HEIGHT := 1280
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
-PRODUCT_NAME := gzosp_harpia
+PRODUCT_NAME := aosp_harpia
 PRODUCT_MODEL := Moto G Play
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
@@ -32,3 +30,4 @@ PRODUCT_RELEASE_NAME := harpia
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=motorola/harpia/harpia:6.0.1/MPI24.241-15.3/3:user/release-keys \
     PRIVATE_BUILD_DESC="harpia-user 6.0.1 MPI24.241-15.3 3 release-keys" \
+
