@@ -31,3 +31,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=motorola/harpia/harpia:6.0.1/MPI24.241-15.3/3:user/release-keys \
     PRIVATE_BUILD_DESC="harpia-user 6.0.1 MPI24.241-15.3 3 release-keys" \
 
+# Pixel Experience required flags
+TARGET_ARCH := arm
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_DENSITY := xhdpi
